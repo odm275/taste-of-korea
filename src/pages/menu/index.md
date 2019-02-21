@@ -1,12 +1,12 @@
 ---
-templateKey: 'menu-page'
-path: /menu
+templateKey: menu-page
 sections:
   section:
-    heading: fnasldfkjansfa
     description: nfksdjnfkasjdnf
+    heading: fnasldfkjansfa
     menuItems:
-      name: dnfaksnfd
       description: fnsdnfksnjdf
+      name: dnfaksnfd
       price: 1
 ---
+
