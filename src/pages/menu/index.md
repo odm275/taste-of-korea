@@ -22,5 +22,7 @@ section:
         name: Fried Rice
         price: '9.99'
       - {}
+  - description: ''
+    heading: Korean BBQ Grill
 ---
 
