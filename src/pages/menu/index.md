@@ -14,5 +14,8 @@ section:
       - description: '2222'
         name: '2222'
         price: '2'
+      - description: '3'
+        name: '3'
+        price: '3'
 ---
 
