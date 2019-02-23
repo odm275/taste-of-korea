@@ -1,12 +1,12 @@
 ---
 templateKey: menu-page
-sections:
-  section:
-    description: nfksdjnfkasjdnf
-    heading: fnasldfkjansfa
+title: fsdfsadfasd
+section:
+  - description: fasdfsadfasdfs
+    heading: fdfadsfasd
     menuItems:
-      description: fnsdnfksnjdf
-      name: dnfaksnfd
-      price: 1
+      - description: sadfasdfasdf
+        name: fasdfasd
+        price: '1'
 ---
 
