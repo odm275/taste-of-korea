@@ -8,5 +8,11 @@ section:
       - description: sadfasdfasdf
         name: fasdfasd
         price: '1'
+  - description: '2222222'
+    heading: '222222'
+    menuItems:
+      - description: '2222'
+        name: '2222'
+        price: '2'
 ---
 
