@@ -1,6 +1,6 @@
 ---
 templateKey: menu-page
-title: fsdfsadfasd
+title: Generic Title
 section:
   - description: fasdfsadfasdfs
     heading: fdfadsfasd
