@@ -1,12 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Banner from '../components/Banner';
+import MenuGrid from '../components/MenuGrid';
 
 export const MenuPage = props => (
-  <div>
-    <h1>MenuPage</h1>
-  </div>
+  <Layout>
+    <div className="section">
+      <Banner title="Menu" />
+      <div className="container">
+        <MenuGrid />
+      </div>
+    </div>
+  </Layout>
 );
 
 export default MenuPage;
@@ -17,6 +23,30 @@ export default MenuPage;
 //      section{
 
 //      }
+//     }
+//   }
+// `;
+
+// Menu.propTypes = {
+//   data: PropTypes.shape({
+//     markdownRemark: PropTypes.object
+//   })
+// };
+
+// export const menuPageQuery = graphql`
+//   query MenuPage($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       frontmatter {
+//         section {
+//           heading
+//           description
+//           menuItems {
+//             name
+//             price
+//             description
+//           }
+//         }
+//       }
 //     }
 //   }
 // `;

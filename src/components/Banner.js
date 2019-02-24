@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Banner = ({ title }) => {
+  //  One time colors for Banner, not worth setting up in sass, inline is better here.
   const koreanRed = '#CD2E3A';
   const koreanBlue = '#0047A0';
   return (
@@ -8,7 +9,7 @@ const Banner = ({ title }) => {
       className="full-width-image-container margin-top-0"
       style={{
         backgroundColor: `${koreanBlue}`
-      }} // style object for image uploaded via css
+      }}
     >
       <h2
         className="has-text-weight-bold is-size-1"

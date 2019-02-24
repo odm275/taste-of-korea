@@ -49,4 +49,6 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "menu-page"}
           - {label: Title, name: title, widget: string}
+          - {label: File Description, name: fileDesc, widget: string}
+          - {label: Menu PDF, name: menu_pdf, widget: file, default: "/uploads/general-manual.pdf"}
           - {label: Section, name: section, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Menu Items, name: menuItems, widget: list, fields:[{label: Name, name: name, widget: string}, {label: Description, name: description, widget: string}, {label: Price, name: price, widget: number}]}]}
