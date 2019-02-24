@@ -1,6 +1,8 @@
 ---
 templateKey: menu-page
 title: Menu
+fileDesc: Check our menu in pdf
+menu_pdf: /img/menu2.pdf
 section:
   - description: ''
     heading: Soups and Rice
