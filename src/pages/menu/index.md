@@ -1,5 +1,6 @@
 ---
 templateKey: menu-page
+bannerTitle: Menu
 title: Menu
 fileDesc: Check our menu in pdf
 menu_pdf: /img/menu2.pdf
