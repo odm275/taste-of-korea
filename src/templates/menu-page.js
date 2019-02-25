@@ -1,52 +1,49 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
-import Banner from '../components/Banner';
 import MenuGrid from '../components/MenuGrid';
 
-export const MenuPage = props => (
-  <Layout>
+export const MenuPageTemplate = props => {
+  console.log(props);
+  return (
     <div className="section">
-      <Banner title="Menu" />
       <div className="container">
         <MenuGrid />
       </div>
     </div>
-  </Layout>
-);
+  );
+};
+
+const MenuPage = ({ data }) => {
+  console.log(data);
+  return (
+    <Layout>
+      <MenuPageTemplate />
+    </Layout>
+  );
+};
+
+MenuPage.propTypes = {
+  data: PropTypes.object.isRequired
+};
 
 export default MenuPage;
 
-// export const menuPageQuery = graphql`
-//   query ProductPage($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//      section{
-
-//      }
-//     }
-//   }
-// `;
-
-// Menu.propTypes = {
-//   data: PropTypes.shape({
-//     markdownRemark: PropTypes.object
-//   })
-// };
-
-// export const menuPageQuery = graphql`
-//   query MenuPage($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       frontmatter {
-//         section {
-//           heading
-//           description
-//           menuItems {
-//             name
-//             price
-//             description
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+export const menuPageQuery = graphql`
+  query MenuPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        section {
+          heading
+          description
+          menuItems {
+            name
+            price
+            description
+          }
+        }
+      }
+    }
+  }
+`;

@@ -6,6 +6,12 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "main"
+    label: "Main"
+    folder: "src/pages/main"
+    create: true
+    fields:
+      - {label: Banner Title, name: bannerTitle, widget: string}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
@@ -27,6 +33,7 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: Banner Title, name: bannerTitle, widget: string}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
@@ -34,6 +41,7 @@ collections:
         name: "products"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: Banner Title, name: bannerTitle, widget: string}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
@@ -48,6 +56,7 @@ collections:
         name: "menu"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "menu-page"}
+          - {label: Banner Title, name: bannerTitle, widget: string}
           - {label: Title, name: title, widget: string}
           - {label: File Description, name: fileDesc, widget: string}
           - {label: Menu PDF, name: menu_pdf, widget: file, default: "/uploads/general-manual.pdf"}
