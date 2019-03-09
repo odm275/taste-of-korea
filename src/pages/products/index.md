@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-bannerTitle: Menu
+bannerTitle: Products
 image: /img/jumbotron.jpg
 heading: What we offer
 description: >-
