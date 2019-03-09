@@ -1,9 +1,8 @@
 ---
 templateKey: menu-page
 bannerTitle: Menu
-title: Menu
-fileDesc: Check our menu in pdf
-menu_pdf: /img/menu2.pdf
+fileDescription: To view our menu in PDF click here.
+menuPdf: /img/menu2.pdf
 section:
   - description: ''
     heading: Soups and Rice
