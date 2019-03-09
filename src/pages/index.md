@@ -1,4 +1,5 @@
 ---
 templateKey: index-page
-bannerTitle: Main
+bannerTitle: 여보세요
 ---
+
