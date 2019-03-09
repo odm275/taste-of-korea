@@ -1,4 +1,4 @@
 ---
-templateKey: main-page
+templateKey: index-page
 bannerTitle: Main
 ---
