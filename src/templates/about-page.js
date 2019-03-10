@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+import Banner from '../components/Banner';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
     <section className="section section--gradient">
+      <Banner title={title} />
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -32,7 +34,6 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
-
   return (
     <Layout>
       <AboutPageTemplate

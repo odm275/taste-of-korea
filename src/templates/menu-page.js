@@ -3,23 +3,32 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import MenuGrid from '../components/MenuGrid';
+import Banner from '../components/Banner';
 
-export const MenuPageTemplate = props => {
-  console.log(props);
-  return (
-    <div className="section">
-      <div className="container">
-        <MenuGrid />
-      </div>
+export const MenuPageTemplate = ({
+  title,
+  fileDescription,
+  sections,
+  menuPdf
+}) => (
+  <div className="section">
+    <Banner title={title} />
+    <div className="container">
+      <MenuGrid sections={sections} />
     </div>
-  );
-};
+  </div>
+);
 
 const MenuPage = ({ data }) => {
-  console.log(data);
+  const { frontmatter } = data.markdownRemark;
+  console.log(frontmatter);
   return (
     <Layout>
-      <MenuPageTemplate />
+      <MenuPageTemplate
+        title={frontmatter.bannerTitle}
+        fileDescription={frontmatter.fileDescription}
+        sections={frontmatter.sections}
+      />
     </Layout>
   );
 };
@@ -34,6 +43,8 @@ export const menuPageQuery = graphql`
   query MenuPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        fileDescription
+        menuPdf
         section {
           heading
           description

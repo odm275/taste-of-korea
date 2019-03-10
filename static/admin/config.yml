@@ -28,7 +28,6 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: Banner Title, name: bannerTitle, widget: string}
-          - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
@@ -36,7 +35,6 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
           - {label: Banner Title, name: bannerTitle, widget: string}
-          - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
@@ -51,13 +49,12 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "menu-page"}
           - {label: Banner Title, name: bannerTitle, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: File Description, name: fileDesc, widget: string}
-          - {label: Menu PDF, name: menu_pdf, widget: file, default: "/uploads/general-manual.pdf"}
+          - {label: File Description, name: fileDescription, widget: string}
+          - {label: Menu PDF, name: menuPdf, widget: file, default: "/uploads/general-manual.pdf"}
           - {label: Section, name: section, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Menu Items, name: menuItems, widget: list, fields:[{label: Name, name: name, widget: string}, {label: Description, name: description, widget: string}, {label: Price, name: price, widget: number}]}]}
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "Index Page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Banner Title, name: bannerTitle, widget: string}   
+          - {label: Banner Title, name: bannerTitle, widget: string}
