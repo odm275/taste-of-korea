@@ -44,7 +44,10 @@ export const menuPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         fileDescription
-        menuPdf
+        menuPdf {
+          description
+          pdf
+        }
         section {
           heading
           description
