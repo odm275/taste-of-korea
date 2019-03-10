@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
 bannerTitle: Products
-image: /img/jumbotron.jpg
+image: /img/flavor_wheel.jpg
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -52,13 +52,13 @@ main:
     optimal for the plants, farmers and the local environment.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    image: /img/chemex.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    image: ''
   image3:
     alt: Coffee beans
-    image: /img/products-grid1.jpg
+    image: ''
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: >-
@@ -68,7 +68,7 @@ testimonials:
     quote: >-
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
-full_image: /img/products-full-width.jpg
+full_image: /img/og-image.jpg
 pricing:
   heading: Monthly subscriptions
   description: >-
